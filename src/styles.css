@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+:root {
+  --bg-main: #05010f;
+  --bg-panel: rgba(17, 10, 38, 0.84);
+  --bg-panel-strong: rgba(22, 12, 52, 0.96);
+
+  --primary: #a855f7;
+  --primary-2: #7c3aed;
+  --cyan: #22d3ee;
+  --pink: #ec4899;
+  --red: #fb7185;
+  --green: #22c55e;
+  --yellow: #facc15;
+
+  --text: #ffffff;
+  --muted: #c9c3e6;
+  --muted-2: #9f97c4;
+  --border: rgba(255, 255, 255, 0.1);
+
+  --shadow-purple: 0 0 35px rgba(168, 85, 247, 0.35);
+  --shadow-cyan: 0 0 35px rgba(34, 211, 238, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 18% 20%, rgba(34, 211, 238, 0.12), transparent 28%),
+    radial-gradient(circle at 80% 16%, rgba(236, 72, 153, 0.22), transparent 26%),
+    radial-gradient(circle at 45% 70%, rgba(124, 58, 237, 0.22), transparent 34%),
+    linear-gradient(135deg, #05010f, #090019 45%, #020617);
+  overflow-x: hidden;
+  font-weight: 650;
+}
+
+a {
+  text-decoration: none;
+}
+
+::selection {
+  background: rgba(168, 85, 247, 0.45);
+  color: white;
+}
