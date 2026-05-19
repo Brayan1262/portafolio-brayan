@@ -28,6 +28,6 @@ jobs:
         run: npm run build -- --base-href ./
 
       - name: Deploy to GitHub Pages
-        run: npx angular-cli-ghpages --dir=dist/portafolio-brayan --branch=gh-pages
+        run: npx angular-cli-ghpages --dir=dist/portafolio-brayan/browser --branch=gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "predeploy": "npm run build -- --base-href ./",
-    "deploy": "npx angular-cli-ghpages --dir=dist/portafolio-brayan"
+    "deploy": "npx angular-cli-ghpages --dir=dist/portafolio-brayan/browser"
   },
   "private": true,
   "packageManager": "npm@10.9.3",
