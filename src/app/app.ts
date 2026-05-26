@@ -22,16 +22,21 @@ export class App implements OnInit, OnDestroy {
     { name: 'Bootstrap', icon: 'bi-bootstrap-fill', type: 'bootstrap', description: 'Diseño responsive' },
     { name: 'Java', icon: 'bi-cup-hot-fill', type: 'java', description: 'Backend' },
     { name: 'Spring Boot', icon: 'bi-flower1', type: 'spring', description: 'APIs REST' },
+    { name: 'Spring Security', icon: 'bi-shield-lock-fill', type: 'spring', description: 'Seguridad backend' },
+    { name: 'JWT', icon: 'bi-key-fill', type: 'java', description: 'Autenticación' },
     { name: 'Python', icon: 'bi-filetype-py', type: 'python', description: 'Microservicios' },
     { name: 'Flask', icon: 'bi-braces', type: 'flask', description: 'API ligera' },
     { name: 'OpenCV', icon: 'bi-eye-fill', type: 'opencv', description: 'Visión artificial' },
     { name: 'MySQL', icon: 'bi-database-fill', type: 'mysql', description: 'Base de datos' },
+    { name: 'PostgreSQL', icon: 'bi-database-check', type: 'mysql', description: 'Base de datos' },
     { name: 'SQL Server', icon: 'bi-hdd-network-fill', type: 'sqlserver', description: 'Consultas SQL' },
+    { name: 'Docker', icon: 'bi-box-seam-fill', type: 'node', description: 'Contenedores' },
     { name: 'Node.js', icon: 'bi-node-plus-fill', type: 'node', description: 'Servicios backend' },
     { name: 'React Native', icon: 'bi-phone-fill', type: 'reactnative', description: 'Apps móviles' },
     { name: 'Git', icon: 'bi-git', type: 'git', description: 'Versionamiento' },
     { name: 'GitHub', icon: 'bi-github', type: 'github', description: 'Repositorios' },
-    { name: 'Postman', icon: 'bi-send-fill', type: 'postman', description: 'Pruebas API' }
+    { name: 'Postman', icon: 'bi-send-fill', type: 'postman', description: 'Pruebas API' },
+    { name: 'Swagger', icon: 'bi-journal-code', type: 'ts', description: 'Documentación API' }
   ];
 
   areas = [
@@ -43,63 +48,80 @@ export class App implements OnInit, OnDestroy {
     {
       title: 'Backend',
       icon: 'bi-server',
-      description: 'Construyo APIs REST y lógica de negocio utilizando Java Spring Boot, Node.js y Python Flask.'
+      description: 'Construyo APIs REST, lógica de negocio y servicios seguros utilizando Java Spring Boot, Spring Security y Python Flask.'
     },
     {
       title: 'Bases de Datos',
       icon: 'bi-database-fill',
-      description: 'Trabajo con modelado, consultas, conexión y gestión de información usando MySQL y SQL Server.'
+      description: 'Trabajo con modelado, consultas, relaciones y persistencia de datos usando PostgreSQL, MySQL y SQL Server.'
     },
     {
       title: 'Soluciones Web',
       icon: 'bi-lightning-charge-fill',
-      description: 'Integro frontend, backend y base de datos para crear sistemas funcionales, escalables y útiles.'
+      description: 'Integro frontend, backend, seguridad, bases de datos y documentación para crear sistemas funcionales y escalables.'
     }
   ];
 
   projects = [
     {
+      title: 'Secure User Management API',
+      category: 'Backend seguro con JWT',
+      url: 'https://github.com/Brayan1262/secure-user-management-api',
+      icon: 'bi-shield-lock-fill',
+      description:
+        'API REST segura para gestión de usuarios, roles y autenticación con JWT, desarrollada con Java Spring Boot, PostgreSQL, Docker, Swagger y pruebas unitarias.',
+      points: [
+        'Implementación de registro, login, generación de token JWT y protección de rutas por roles.',
+        'Gestión de usuarios con roles ADMIN, USER y SUPPORT, activación y desactivación de cuentas.',
+        'Manejo global de errores, validaciones profesionales y documentación interactiva con Swagger.',
+        'Uso de PostgreSQL con Docker, arquitectura por capas, JUnit 5 y Mockito para pruebas unitarias.'
+      ],
+      tags: ['Java 21', 'Spring Boot', 'Spring Security', 'JWT', 'PostgreSQL', 'Docker']
+    },
+    {
+      title: 'SalesFlow CRM API',
+      category: 'CRM empresarial',
+      url: 'https://github.com/Brayan1262/salesflow-crm-api',
+      icon: 'bi-briefcase-fill',
+      description:
+        'API REST tipo CRM para gestionar clientes, contactos, oportunidades comerciales, actividades de seguimiento y dashboard empresarial.',
+      points: [
+        'Gestión completa de clientes, contactos, oportunidades de venta y actividades comerciales.',
+        'Dashboard CRM con indicadores de clientes, oportunidades, montos estimados y actividades pendientes.',
+        'Validaciones, manejo global de errores y documentación visual mediante Swagger/OpenAPI.',
+        'Backend desarrollado con Java Spring Boot, PostgreSQL, Docker, JPA, Hibernate y arquitectura por capas.'
+      ],
+      tags: ['Java 21', 'Spring Boot', 'PostgreSQL', 'Docker', 'Swagger', 'CRM']
+    },
+    {
+      title: 'SmartStock AI',
+      category: 'Inventario inteligente',
+      url: 'https://github.com/Brayan1262/smartstock-ai',
+      icon: 'bi-cart-check-fill',
+      description:
+        'Sistema inteligente de inventario que integra Angular, Java Spring Boot y MySQL con recomendaciones de reposición y asistente virtual.',
+      points: [
+        'Plataforma para gestionar productos, ventas, stock, historial y métricas del inventario.',
+        'Dashboard empresarial con indicadores de productos críticos, stock normal y valor del inventario.',
+        'Recomendaciones inteligentes para reposición de productos según el estado del stock.',
+        'Frontend en Angular conectado a backend Java Spring Boot mediante API REST.'
+      ],
+      tags: ['Angular', 'Spring Boot', 'MySQL', 'API REST', 'Inventario', 'IA']
+    },
+    {
       title: 'Sistema de Asistencia Facial',
-      category: 'Proyecto destacado',
+      category: 'Visión computacional',
       url: 'https://github.com/Brayan1262/sistema-asistencia-facial',
       icon: 'bi-person-bounding-box',
       description:
-        'Sistema web de asistencia facial para instituciones educativas. Permite registrar estudiantes y docentes, asociar imágenes faciales, reconocer personas desde cámara o imagen y marcar asistencia automáticamente.',
+        'Sistema web de asistencia facial para instituciones educativas, integrando Angular, Java Spring Boot, Python Flask, OpenCV y MySQL.',
       points: [
-        'Frontend profesional desarrollado con Angular, TypeScript, Bootstrap y modo claro/oscuro.',
-        'Backend con Java Spring Boot para gestionar personas, asistencias, faltas y justificaciones.',
-        'Microservicio Python Flask con OpenCV para registrar y reconocer rostros.',
-        'Base de datos MySQL para almacenar personas, estados, asistencias y rutas faciales.'
+        'Registro de estudiantes y docentes con asociación de imágenes faciales.',
+        'Reconocimiento facial mediante microservicio en Python Flask con OpenCV.',
+        'Backend en Java Spring Boot para gestionar personas, asistencias, estados y justificaciones.',
+        'Frontend administrativo en Angular con diseño profesional, navegación por módulos y modo claro/oscuro.'
       ],
       tags: ['Angular', 'Spring Boot', 'Python Flask', 'OpenCV', 'MySQL']
-    },
-    {
-      title: 'Plataforma Web de Cursos Online',
-      category: 'Educación digital',
-      url: 'https://github.com/Brayan1262/Pagina-web---Cursos-online-',
-      icon: 'bi-mortarboard-fill',
-      description:
-        'Plataforma web de cursos online orientada a niños, adolescentes y adultos, con interfaz adaptable, contenido educativo y enfoque en personas de bajos recursos.',
-      points: [
-        'Diseño de interfaz educativa con secciones organizadas.',
-        'Uso de HTML, CSS, JavaScript y Bootstrap para una experiencia visual clara.',
-        'Proyecto académico orientado a educación, accesibilidad y aprendizaje digital.'
-      ],
-      tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Educación']
-    },
-    {
-      title: 'UCVBot',
-      category: 'Chatbot académico',
-      url: 'https://github.com/Brayan1262/UCVBot',
-      icon: 'bi-chat-dots-fill',
-      description:
-        'Chatbot web orientado a brindar información y asistencia académica para estudiantes, desarrollado con TypeScript y tecnologías web modernas.',
-      points: [
-        'Proyecto enfocado en asistencia académica para estudiantes.',
-        'Uso de TypeScript y tecnologías frontend modernas.',
-        'Aplicación orientada a mejorar la comunicación y consulta de información universitaria.'
-      ],
-      tags: ['TypeScript', 'Frontend', 'Chatbot', 'Web App', 'UCV']
     }
   ];
 
