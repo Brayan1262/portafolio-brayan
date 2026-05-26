@@ -64,17 +64,32 @@ export class App implements OnInit, OnDestroy {
 
   projects = [
     {
+      title: 'TaskGuard API',
+      category: 'Backend Python profesional',
+      url: 'https://github.com/Brayan1262/taskguard-fastapi',
+      icon: 'bi-kanban-fill',
+      description:
+        'API REST profesional para gestión de proyectos y tareas, desarrollada con Python FastAPI, PostgreSQL, Docker, JWT, RBAC, logging, dashboard de métricas y tests automatizados.',
+      points: [
+        'Autenticación JWT con usuario autenticado y control de permisos por roles ADMIN, MANAGER y DEVELOPER.',
+        'CRUD de proyectos y tareas con reglas de acceso, asignación de tareas, estados y prioridades.',
+        'Dashboard de métricas, manejo global de errores, middleware de logging y header X-Process-Time.',
+        'Testing con pytest, arquitectura por capas, SQLAlchemy, Pydantic, Docker y PostgreSQL.'
+      ],
+      tags: ['Python', 'FastAPI', 'JWT', 'RBAC', 'PostgreSQL', 'Docker', 'Pytest']
+    },
+    {
       title: 'Secure User Management API',
-      category: 'Backend seguro con JWT',
+      category: 'Backend Java seguro',
       url: 'https://github.com/Brayan1262/secure-user-management-api',
       icon: 'bi-shield-lock-fill',
       description:
-        'API REST segura para gestión de usuarios, roles y autenticación con JWT, desarrollada con Java Spring Boot, PostgreSQL, Docker, Swagger y pruebas unitarias.',
+        'API REST segura para gestión de usuarios, roles y autenticación con JWT, desarrollada con Java Spring Boot, Spring Security, PostgreSQL, Docker, Swagger y pruebas unitarias.',
       points: [
-        'Implementación de registro, login, generación de token JWT y protección de rutas por roles.',
+        'Registro, login, generación de token JWT y protección de rutas por roles.',
         'Gestión de usuarios con roles ADMIN, USER y SUPPORT, activación y desactivación de cuentas.',
         'Manejo global de errores, validaciones profesionales y documentación interactiva con Swagger.',
-        'Uso de PostgreSQL con Docker, arquitectura por capas, JUnit 5 y Mockito para pruebas unitarias.'
+        'Uso de PostgreSQL con Docker, arquitectura por capas, JUnit 5 y Mockito.'
       ],
       tags: ['Java 21', 'Spring Boot', 'Spring Security', 'JWT', 'PostgreSQL', 'Docker']
     },
