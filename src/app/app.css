@@ -281,26 +281,26 @@
 
 .btn-main,
 .btn-social {
-  border-radius: 18px;
-  padding: 16px 24px;
+  border-radius: 12px;
+  padding: 18px 36px;
   font-size: 17px;
-  font-weight: 950;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  transition: 0.25s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-main {
-  background: linear-gradient(135deg, var(--primary), var(--pink));
-  color: white;
-  box-shadow: 0 0 30px rgba(168, 85, 247, 0.45);
+  background: linear-gradient(135deg, var(--primary), var(--primary-2));
+  color: #050505;
+  box-shadow: 0 0 25px rgba(0, 242, 254, 0.4);
 }
 
 .btn-main:hover {
-  color: white;
-  transform: translateY(-4px);
-  box-shadow: 0 0 42px rgba(236, 72, 153, 0.65);
+  color: #050505;
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 0 40px rgba(0, 242, 254, 0.7);
 }
 
 .btn-social {
@@ -751,19 +751,21 @@
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   gap: 30px;
-  background:
-    radial-gradient(circle at top left, rgba(34, 211, 238, 0.12), transparent 34%),
-    radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.12), transparent 36%),
-    rgba(17, 10, 38, 0.92);
-  border: 1px solid rgba(168, 85, 247, 0.18);
-  border-radius: 34px;
+  background: rgba(30, 30, 30, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
   padding: 34px;
   min-height: 530px;
-  transition: 0.25s ease;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-card:hover {
-  box-shadow: 0 0 38px rgba(168, 85, 247, 0.18);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 242, 254, 0.15);
+  border-color: rgba(0, 242, 254, 0.3);
 }
 
 .project-visual {
@@ -905,18 +907,57 @@
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 9px;
+  gap: 8px;
   margin-top: auto;
+  margin-bottom: 24px;
 }
 
 .project-tags span {
-  color: #f9a8d4;
-  background: rgba(236, 72, 153, 0.12);
-  border: 1px solid rgba(236, 72, 153, 0.18);
+  color: var(--primary);
+  background: rgba(0, 242, 254, 0.1);
+  border: 1px solid rgba(0, 242, 254, 0.2);
   border-radius: 999px;
-  padding: 8px 12px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.project-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-card-action {
+  border-radius: 8px;
+  padding: 10px 18px;
   font-size: 14px;
-  font-weight: 850;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.25s ease;
+  background: rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-card-action:hover {
+  background: var(--primary);
+  color: #050505;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 242, 254, 0.3);
+}
+
+.btn-card-action.outline {
+  background: transparent;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-card-action.outline:hover {
+  background: rgba(0, 242, 254, 0.1);
+  color: var(--primary);
 }
 
 .project-dots {

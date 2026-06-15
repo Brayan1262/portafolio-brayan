@@ -2,30 +2,30 @@
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
 :root {
-  --bg-main: #05010f;
-  --bg-panel: rgba(17, 10, 38, 0.84);
-  --bg-panel-strong: rgba(22, 12, 52, 0.96);
+  --bg-main: #121212;
+  --bg-panel: rgba(30, 30, 30, 0.84);
+  --bg-panel-strong: rgba(40, 40, 40, 0.96);
 
-  --primary: #a855f7;
-  --primary-2: #7c3aed;
+  --primary: #00f2fe; /* Azul eléctrico / Vibrante */
+  --primary-2: #0ea5e9;
   --cyan: #22d3ee;
   --pink: #ec4899;
   --red: #fb7185;
   --green: #22c55e;
   --yellow: #facc15;
 
-  --text: #ffffff;
-  --muted: #c9c3e6;
-  --muted-2: #9f97c4;
+  --text: #f9fafb;
+  --muted: #9ca3af;
+  --muted-2: #6b7280;
   --border: rgba(255, 255, 255, 0.1);
 
-  --shadow-purple: 0 0 35px rgba(168, 85, 247, 0.35);
+  --shadow-primary: 0 0 35px rgba(0, 242, 254, 0.35);
   --shadow-cyan: 0 0 35px rgba(34, 211, 238, 0.25);
 }
 
 * {
   box-sizing: border-box;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 html {
@@ -36,12 +36,12 @@ body {
   margin: 0;
   color: var(--text);
   background:
-    radial-gradient(circle at 18% 20%, rgba(34, 211, 238, 0.12), transparent 28%),
-    radial-gradient(circle at 80% 16%, rgba(236, 72, 153, 0.22), transparent 26%),
-    radial-gradient(circle at 45% 70%, rgba(124, 58, 237, 0.22), transparent 34%),
-    linear-gradient(135deg, #05010f, #090019 45%, #020617);
+    radial-gradient(circle at 18% 20%, rgba(0, 242, 254, 0.08), transparent 28%),
+    radial-gradient(circle at 80% 16%, rgba(14, 165, 233, 0.08), transparent 26%),
+    radial-gradient(circle at 45% 70%, rgba(34, 211, 238, 0.08), transparent 34%),
+    linear-gradient(135deg, #121212, #18181b 45%, #09090b);
   overflow-x: hidden;
-  font-weight: 650;
+  font-weight: 400;
 }
 
 a {
@@ -49,6 +49,19 @@ a {
 }
 
 ::selection {
-  background: rgba(168, 85, 247, 0.45);
+  background: rgba(0, 242, 254, 0.3);
   color: white;
+}
+
+/* Scroll Reveal Animations */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-up.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

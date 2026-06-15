@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit, signal } from '@angular/core';
+import { Component, OnDestroy, OnInit, signal, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +7,7 @@ import { Component, OnDestroy, OnInit, signal } from '@angular/core';
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
-export class App implements OnInit, OnDestroy {
+export class App implements OnInit, OnDestroy, AfterViewInit {
   currentYear = new Date().getFullYear();
 
   proyectoActual = signal(0);
@@ -64,57 +64,27 @@ export class App implements OnInit, OnDestroy {
 
   projects = [
     {
-      title: 'TaskGuard API',
-      category: 'Backend Python profesional',
-      url: 'https://github.com/Brayan1262/taskguard-fastapi',
-      icon: 'bi-kanban-fill',
+      title: 'Guardián Financiero IA 🛡️',
+      category: 'Arquitectura de Microservicios',
+      url: 'https://github.com/Brayan1262/Guardian-Financiero-IA',
+      icon: 'bi-shield-check',
       description:
-        'API REST profesional para gestión de proyectos y tareas, desarrollada con Python FastAPI, PostgreSQL, Docker, JWT, RBAC, logging, dashboard de métricas y tests automatizados.',
+        'Plataforma antifraude de grado empresarial con arquitectura de microservicios. Motor de reglas en Java, evaluación de IA en Python y dashboard en Angular. 100% Dockerizado.',
       points: [
-        'Autenticación JWT con usuario autenticado y control de permisos por roles ADMIN, MANAGER y DEVELOPER.',
-        'CRUD de proyectos y tareas con reglas de acceso, asignación de tareas, estados y prioridades.',
-        'Dashboard de métricas, manejo global de errores, middleware de logging y header X-Process-Time.',
-        'Testing con pytest, arquitectura por capas, SQLAlchemy, Pydantic, Docker y PostgreSQL.'
+        'Motor de reglas de negocio en Java Spring Boot.',
+        'Servicio de evaluación de IA desarrollado en Python FastAPI.',
+        'Dashboard de monitoreo e incidentes en Angular 17.',
+        'Arquitectura de microservicios, PostgreSQL, Docker y autenticación con JWT.'
       ],
-      tags: ['Python', 'FastAPI', 'JWT', 'RBAC', 'PostgreSQL', 'Docker', 'Pytest']
+      tags: ['Angular 17', 'Spring Boot', 'FastAPI', 'PostgreSQL', 'Docker', 'JWT']
     },
     {
-      title: 'Secure User Management API',
-      category: 'Backend Java seguro',
-      url: 'https://github.com/Brayan1262/secure-user-management-api',
-      icon: 'bi-shield-lock-fill',
-      description:
-        'API REST segura para gestión de usuarios, roles y autenticación con JWT, desarrollada con Java Spring Boot, Spring Security, PostgreSQL, Docker, Swagger y pruebas unitarias.',
-      points: [
-        'Registro, login, generación de token JWT y protección de rutas por roles.',
-        'Gestión de usuarios con roles ADMIN, USER y SUPPORT, activación y desactivación de cuentas.',
-        'Manejo global de errores, validaciones profesionales y documentación interactiva con Swagger.',
-        'Uso de PostgreSQL con Docker, arquitectura por capas, JUnit 5 y Mockito.'
-      ],
-      tags: ['Java 21', 'Spring Boot', 'Spring Security', 'JWT', 'PostgreSQL', 'Docker']
-    },
-    {
-      title: 'SalesFlow CRM API',
-      category: 'CRM empresarial',
-      url: 'https://github.com/Brayan1262/salesflow-crm-api',
-      icon: 'bi-briefcase-fill',
-      description:
-        'API REST tipo CRM para gestionar clientes, contactos, oportunidades comerciales, actividades de seguimiento y dashboard empresarial.',
-      points: [
-        'Gestión completa de clientes, contactos, oportunidades de venta y actividades comerciales.',
-        'Dashboard CRM con indicadores de clientes, oportunidades, montos estimados y actividades pendientes.',
-        'Validaciones, manejo global de errores y documentación visual mediante Swagger/OpenAPI.',
-        'Backend desarrollado con Java Spring Boot, PostgreSQL, Docker, JPA, Hibernate y arquitectura por capas.'
-      ],
-      tags: ['Java 21', 'Spring Boot', 'PostgreSQL', 'Docker', 'Swagger', 'CRM']
-    },
-    {
-      title: 'SmartStock AI',
-      category: 'Inventario inteligente',
-      url: 'https://github.com/Brayan1262/smartstock-ai',
+      title: 'IA Inventario Inteligente',
+      category: 'Inventario Inteligente',
+      url: 'https://github.com/Brayan1262/IA-inventario-inteligente',
       icon: 'bi-cart-check-fill',
       description:
-        'Sistema inteligente de inventario que integra Angular, Java Spring Boot y MySQL con recomendaciones de reposición y asistente virtual.',
+        'Sistema inteligente de inventario que integra Angular, Java Spring Boot y base de datos con recomendaciones de reposición y asistente virtual.',
       points: [
         'Plataforma para gestionar productos, ventas, stock, historial y métricas del inventario.',
         'Dashboard empresarial con indicadores de productos críticos, stock normal y valor del inventario.',
@@ -124,25 +94,78 @@ export class App implements OnInit, OnDestroy {
       tags: ['Angular', 'Spring Boot', 'MySQL', 'API REST', 'Inventario', 'IA']
     },
     {
+      title: 'Buki Booking App',
+      category: 'Sistema de Reservas',
+      url: 'https://github.com/Brayan1262/buki-booking-app',
+      icon: 'bi-calendar-check-fill',
+      description:
+        'Aplicación web moderna orientada a la gestión eficiente de reservas, citas y disponibilidad de servicios.',
+      points: [
+        'Gestión de disponibilidad y franjas horarias configurables.',
+        'Panel de administración y control de reservas en tiempo real.',
+        'Desarrollo Full Stack enfocado en la experiencia de usuario.',
+        'Integración con base de datos relacional y autenticación segura.'
+      ],
+      tags: ['Angular', 'Spring Boot', 'PostgreSQL', 'JWT', 'Docker']
+    },
+    {
       title: 'Sistema de Asistencia Facial',
-      category: 'Visión computacional',
+      category: 'Visión Computacional',
       url: 'https://github.com/Brayan1262/sistema-asistencia-facial',
       icon: 'bi-person-bounding-box',
       description:
-        'Sistema web de asistencia facial para instituciones educativas, integrando Angular, Java Spring Boot, Python Flask, OpenCV y MySQL.',
+        'Sistema web de asistencia facial para instituciones educativas, integrando Angular, Java Spring Boot, Python Flask y OpenCV.',
       points: [
         'Registro de estudiantes y docentes con asociación de imágenes faciales.',
         'Reconocimiento facial mediante microservicio en Python Flask con OpenCV.',
         'Backend en Java Spring Boot para gestionar personas, asistencias, estados y justificaciones.',
-        'Frontend administrativo en Angular con diseño profesional, navegación por módulos y modo claro/oscuro.'
+        'Frontend administrativo en Angular con diseño profesional y reportes.'
       ],
       tags: ['Angular', 'Spring Boot', 'Python Flask', 'OpenCV', 'MySQL']
+    },
+    {
+      title: 'Gestión Usuarios Segura API',
+      category: 'Seguridad Backend',
+      url: 'https://github.com/Brayan1262/gestion-usuarios-segura-api',
+      icon: 'bi-shield-lock-fill',
+      description:
+        'API REST segura para gestión de usuarios, roles y autenticación con JWT, desarrollada con Java Spring Boot, Spring Security y PostgreSQL.',
+      points: [
+        'Registro, login, generación de token JWT y protección de rutas por roles.',
+        'Gestión de usuarios con roles ADMIN, USER y SUPPORT, activación y desactivación de cuentas.',
+        'Manejo global de errores, validaciones profesionales y documentación interactiva con Swagger.',
+        'Arquitectura por capas, integraciones sólidas y pruebas unitarias.'
+      ],
+      tags: ['Java 21', 'Spring Boot', 'Spring Security', 'JWT', 'PostgreSQL', 'Docker']
     }
   ];
 
   ngOnInit(): void {
     this.iniciarCarruselAutomatico();
   }
+
+  ngAfterViewInit(): void {
+    if (typeof window !== 'undefined' && 'IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+      });
+
+      setTimeout(() => {
+        document.querySelectorAll('.reveal-up').forEach((el) => {
+          observer.observe(el);
+        });
+      }, 100);
+    }
+  }
+
 
   ngOnDestroy(): void {
     this.detenerCarruselAutomatico();

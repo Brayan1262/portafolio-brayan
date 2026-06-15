@@ -113,7 +113,7 @@
 
   <section id="sobre-mi" class="section-block">
     <div class="page-container">
-      <div class="section-title title-red">
+      <div class="section-title title-red reveal-up">
         <span>SOBRE MÍ</span>
         <h2>Perfil Profesional</h2>
         <p>
@@ -121,7 +121,7 @@
         </p>
       </div>
 
-      <div class="about-panel">
+      <div class="about-panel reveal-up">
         <p>
           Soy <strong>Brayan Jair Chavez Oscor</strong>, estudiante de
           <strong>Ingeniería de Sistemas</strong>, con enfoque en el desarrollo
@@ -144,7 +144,7 @@
         </p>
       </div>
 
-      <div class="areas-grid">
+      <div class="areas-grid reveal-up">
         @for (area of areas; track area.title) {
           <article class="area-card">
             <div class="area-icon">
@@ -161,7 +161,7 @@
 
   <section id="tecnologias" class="section-block skills-section">
     <div class="page-container">
-      <div class="section-title center title-cyan">
+      <div class="section-title center title-cyan reveal-up">
         <span>MIS TECNOLOGÍAS</span>
         <h2>Tecnologías y Herramientas</h2>
         <p>
@@ -169,7 +169,7 @@
         </p>
       </div>
 
-      <div class="skills-grid">
+      <div class="skills-grid reveal-up">
         @for (skill of skills; track skill.name) {
           <article class="skill-card {{ skill.type }}">
             <div class="skill-icon">
@@ -186,7 +186,7 @@
 
   <section id="proyectos" class="section-block projects-section">
     <div class="page-container">
-      <div class="projects-heading-row">
+      <div class="projects-heading-row reveal-up">
         <div class="section-title title-green">
           <span>PROYECTOS DESTACADOS</span>
           <h2>Mis 5 Proyectos Principales</h2>
@@ -208,7 +208,7 @@
         </div>
       </div>
 
-      <div class="projects-carousel">
+      <div class="projects-carousel reveal-up">
         <div
           class="projects-track"
           [style.transform]="'translateX(-' + proyectoActual() * 100 + '%)'"
@@ -235,10 +235,6 @@
                 <div class="project-content">
                   <div class="project-top">
                     <span>{{ project.category }}</span>
-
-                    <a [href]="project.url" target="_blank" class="project-github">
-                      <i class="bi bi-github"></i>
-                    </a>
                   </div>
 
                   <h3>{{ project.title }}</h3>
@@ -257,6 +253,15 @@
                     @for (tag of project.tags; track tag) {
                       <span>{{ tag }}</span>
                     }
+                  </div>
+
+                  <div class="project-actions">
+                    <a [href]="project.url" target="_blank" class="btn-card-action">
+                      <i class="bi bi-github"></i> Ver Código
+                    </a>
+                    <a href="#" target="_blank" class="btn-card-action outline">
+                      <i class="bi bi-box-arrow-up-right"></i> Ver Demo
+                    </a>
                   </div>
                 </div>
               </div>
@@ -279,7 +284,7 @@
 
   <section id="contacto" class="section-block contact-section">
     <div class="page-container contact-grid">
-      <div class="contact-info">
+      <div class="contact-info reveal-up">
         <span>CONTACTO</span>
         <h2>Trabajemos juntos</h2>
 
@@ -312,7 +317,7 @@
         </div>
       </div>
 
-      <form class="contact-form">
+      <form class="contact-form reveal-up">
         <label>Nombres</label>
         <input type="text" placeholder="¿Cuál es tu nombre?">
 
