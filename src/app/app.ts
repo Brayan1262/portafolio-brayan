@@ -94,19 +94,19 @@ export class App implements OnInit, OnDestroy, AfterViewInit {
       tags: ['Java', 'Spring Boot', 'Python', 'WebSockets', 'Docker', 'PostgreSQL']
     },
     {
-      title: 'IA Inventario Inteligente',
-      category: 'Inventario Inteligente',
-      url: 'https://github.com/Brayan1262/IA-inventario-inteligente',
-      icon: 'bi-cart-check-fill',
+      title: 'Gestión Usuarios Segura API',
+      category: 'Seguridad Backend',
+      url: 'https://github.com/Brayan1262/gestion-usuarios-segura-api',
+      icon: 'bi-shield-lock-fill',
       description:
-        'Sistema inteligente de inventario y gestión que integra Angular y Java Spring Boot con un asistente virtual de IA para recomendaciones automáticas.',
+        'API REST segura para gestión de usuarios, roles y autenticación con JWT usando Java Spring Boot, PostgreSQL y Docker.',
       points: [
-        'Plataforma completa para gestionar productos, ventas, stock, y métricas del inventario.',
-        'Dashboard empresarial con indicadores de productos críticos y valor del inventario.',
-        'Asistente IA para recomendaciones predictivas de reposición de productos.',
-        'Frontend moderno en Angular conectado a backend Java Spring Boot con MySQL.'
+        'Autenticación y autorización basada en tokens JWT con Spring Security.',
+        'Gestión completa de usuarios y roles con control de acceso.',
+        'Persistencia de datos segura utilizando PostgreSQL.',
+        'Despliegue containerizado mediante Docker para fácil distribución.'
       ],
-      tags: ['Angular', 'Spring Boot', 'MySQL', 'API REST', 'IA']
+      tags: ['Java', 'Spring Boot', 'PostgreSQL', 'Docker', 'JWT', 'API REST']
     },
     {
       title: 'Sistema de Asistencia Facial',
