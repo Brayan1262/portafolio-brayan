@@ -66,32 +66,32 @@ export class App implements OnInit, OnDestroy, AfterViewInit {
     {
       title: 'Guardián Financiero IA 🛡️',
       category: 'Arquitectura de Microservicios',
-      url: 'https://github.com/Brayan1262/Guardian-Financiero-IA',
+      url: 'https://github.com/Brayan1262/IA-guardian-financiero',
       icon: 'bi-shield-check',
       description:
-        'Plataforma antifraude de grado empresarial con arquitectura de microservicios. Motor de reglas en Java, evaluación de IA en Python y dashboard en Angular. 100% Dockerizado.',
+        'Plataforma full-stack antifraude de grado empresarial. Combina motor de reglas en Java y evaluación de IA en Python para analizar transacciones y calcular riesgos en tiempo real.',
       points: [
         'Motor de reglas de negocio en Java Spring Boot.',
         'Servicio de evaluación de IA desarrollado en Python FastAPI.',
-        'Dashboard de monitoreo e incidentes en Angular 17.',
+        'Dashboard de monitoreo e incidentes en Angular.',
         'Arquitectura de microservicios, PostgreSQL, Docker y autenticación con JWT.'
       ],
-      tags: ['Angular 17', 'Spring Boot', 'FastAPI', 'PostgreSQL', 'Docker', 'JWT']
+      tags: ['Angular', 'Spring Boot', 'FastAPI', 'PostgreSQL', 'Docker', 'IA']
     },
     {
       title: 'Centinela TI 🛡️',
       category: 'Monitoreo e IA Predictiva',
-      url: 'https://github.com/Brayan1262/centinela-ti',
+      url: 'https://github.com/Brayan1262/centinela-TI',
       icon: 'bi-cpu-fill',
       description:
-        'Centro de mando predictivo y plataforma SaaS de grado Enterprise para el monitoreo de servidores en tiempo real con Inteligencia Artificial.',
+        'Centro de mando predictivo y plataforma SaaS de grado Enterprise para el monitoreo de servidores en tiempo real y seguridad predictiva usando Inteligencia Artificial.',
       points: [
         'Comunicación en tiempo real mediante WebSockets (STOMP).',
-        'Modelo de Machine Learning en Python para predecir uso de memoria.',
-        'Frontend SPA interactivo con efectos Glassmorphism y alertas en tiempo real.',
-        'Ecosistema dockerizado con microservicios en Java Spring Boot y Postgres.'
+        'Modelo de Machine Learning en Python para predecir anomalías y uso de recursos.',
+        'Frontend SPA interactivo con alertas en tiempo real y dashboards analíticos.',
+        'Ecosistema dockerizado con microservicios en Java Spring Boot y PostgreSQL.'
       ],
-      tags: ['Java 21', 'Spring Boot', 'Python', 'WebSockets', 'Docker', 'PostgreSQL']
+      tags: ['Java', 'Spring Boot', 'Python', 'WebSockets', 'Docker', 'PostgreSQL']
     },
     {
       title: 'IA Inventario Inteligente',
@@ -99,14 +99,14 @@ export class App implements OnInit, OnDestroy, AfterViewInit {
       url: 'https://github.com/Brayan1262/IA-inventario-inteligente',
       icon: 'bi-cart-check-fill',
       description:
-        'Sistema inteligente de inventario que integra Angular, Java Spring Boot y base de datos con recomendaciones de reposición y asistente virtual.',
+        'Sistema inteligente de inventario y gestión que integra Angular y Java Spring Boot con un asistente virtual de IA para recomendaciones automáticas.',
       points: [
-        'Plataforma para gestionar productos, ventas, stock, historial y métricas del inventario.',
-        'Dashboard empresarial con indicadores de productos críticos, stock normal y valor del inventario.',
-        'Recomendaciones inteligentes para reposición de productos según el estado del stock.',
-        'Frontend en Angular conectado a backend Java Spring Boot mediante API REST.'
+        'Plataforma completa para gestionar productos, ventas, stock, y métricas del inventario.',
+        'Dashboard empresarial con indicadores de productos críticos y valor del inventario.',
+        'Asistente IA para recomendaciones predictivas de reposición de productos.',
+        'Frontend moderno en Angular conectado a backend Java Spring Boot con MySQL.'
       ],
-      tags: ['Angular', 'Spring Boot', 'MySQL', 'API REST', 'Inventario', 'IA']
+      tags: ['Angular', 'Spring Boot', 'MySQL', 'API REST', 'IA']
     },
     {
       title: 'Sistema de Asistencia Facial',
@@ -114,29 +114,29 @@ export class App implements OnInit, OnDestroy, AfterViewInit {
       url: 'https://github.com/Brayan1262/sistema-asistencia-facial',
       icon: 'bi-person-bounding-box',
       description:
-        'Sistema web de asistencia facial para instituciones educativas, integrando Angular, Java Spring Boot, Python Flask y OpenCV.',
+        'Sistema web avanzado de asistencia facial para instituciones, aplicando visión computacional para registro automático integrando Angular, Spring Boot y Flask.',
       points: [
-        'Registro de estudiantes y docentes con asociación de imágenes faciales.',
-        'Reconocimiento facial mediante microservicio en Python Flask con OpenCV.',
-        'Backend en Java Spring Boot para gestionar personas, asistencias, estados y justificaciones.',
-        'Frontend administrativo en Angular con diseño profesional y reportes.'
+        'Reconocimiento facial biométrico mediante microservicio en Python Flask con OpenCV.',
+        'Registro preciso de usuarios con asociación automática de imágenes faciales.',
+        'Backend en Java Spring Boot para gestionar personas, asistencias y justificaciones.',
+        'Frontend administrativo en Angular con paneles de control y generación de reportes.'
       ],
       tags: ['Angular', 'Spring Boot', 'Python Flask', 'OpenCV', 'MySQL']
     },
     {
-      title: 'Gestión Usuarios Segura API',
+      title: 'API Gestión Tareas Segura',
       category: 'Seguridad Backend',
-      url: 'https://github.com/Brayan1262/gestion-usuarios-segura-api',
-      icon: 'bi-shield-lock-fill',
+      url: 'https://github.com/Brayan1262/api-gestion-tareas-segura',
+      icon: 'bi-lock-fill',
       description:
-        'API REST segura para gestión de usuarios, roles y autenticación con JWT, desarrollada con Java Spring Boot, Spring Security y PostgreSQL.',
+        'API REST profesional para la gestión de tareas y proyectos, implementando altos estándares de seguridad, control de acceso y observabilidad.',
       points: [
-        'Registro, login, generación de token JWT y protección de rutas por roles.',
-        'Gestión de usuarios con roles ADMIN, USER y SUPPORT, activación y desactivación de cuentas.',
-        'Manejo global de errores, validaciones profesionales y documentación interactiva con Swagger.',
-        'Arquitectura por capas, integraciones sólidas y pruebas unitarias.'
+        'Autenticación robusta con JWT y Control de Acceso Basado en Roles (RBAC).',
+        'Trazabilidad completa mediante sistemas de logging estructurado y métricas.',
+        'Garantía de calidad con implementación de pruebas automatizadas integrales.',
+        'Despliegue y ecosistema totalmente Dockerizado sobre base de datos PostgreSQL.'
       ],
-      tags: ['Java 21', 'Spring Boot', 'Spring Security', 'JWT', 'PostgreSQL', 'Docker']
+      tags: ['Python', 'API REST', 'JWT', 'RBAC', 'PostgreSQL', 'Docker']
     }
   ];
 
