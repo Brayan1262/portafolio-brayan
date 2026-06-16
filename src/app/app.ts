@@ -79,6 +79,21 @@ export class App implements OnInit, OnDestroy, AfterViewInit {
       tags: ['Angular 17', 'Spring Boot', 'FastAPI', 'PostgreSQL', 'Docker', 'JWT']
     },
     {
+      title: 'Centinela TI 🛡️',
+      category: 'Monitoreo e IA Predictiva',
+      url: 'https://github.com/Brayan1262/centinela-ti',
+      icon: 'bi-cpu-fill',
+      description:
+        'Centro de mando predictivo y plataforma SaaS de grado Enterprise para el monitoreo de servidores en tiempo real con Inteligencia Artificial.',
+      points: [
+        'Comunicación en tiempo real mediante WebSockets (STOMP).',
+        'Modelo de Machine Learning en Python para predecir uso de memoria.',
+        'Frontend SPA interactivo con efectos Glassmorphism y alertas en tiempo real.',
+        'Ecosistema dockerizado con microservicios en Java Spring Boot y Postgres.'
+      ],
+      tags: ['Java 21', 'Spring Boot', 'Python', 'WebSockets', 'Docker', 'PostgreSQL']
+    },
+    {
       title: 'IA Inventario Inteligente',
       category: 'Inventario Inteligente',
       url: 'https://github.com/Brayan1262/IA-inventario-inteligente',
@@ -92,21 +107,6 @@ export class App implements OnInit, OnDestroy, AfterViewInit {
         'Frontend en Angular conectado a backend Java Spring Boot mediante API REST.'
       ],
       tags: ['Angular', 'Spring Boot', 'MySQL', 'API REST', 'Inventario', 'IA']
-    },
-    {
-      title: 'Buki Booking App',
-      category: 'Sistema de Reservas',
-      url: 'https://github.com/Brayan1262/buki-booking-app',
-      icon: 'bi-calendar-check-fill',
-      description:
-        'Aplicación web moderna orientada a la gestión eficiente de reservas, citas y disponibilidad de servicios.',
-      points: [
-        'Gestión de disponibilidad y franjas horarias configurables.',
-        'Panel de administración y control de reservas en tiempo real.',
-        'Desarrollo Full Stack enfocado en la experiencia de usuario.',
-        'Integración con base de datos relacional y autenticación segura.'
-      ],
-      tags: ['Angular', 'Spring Boot', 'PostgreSQL', 'JWT', 'Docker']
     },
     {
       title: 'Sistema de Asistencia Facial',
