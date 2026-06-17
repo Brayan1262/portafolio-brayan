@@ -36,7 +36,12 @@ export class App implements OnInit, OnDestroy, AfterViewInit {
     { name: 'Git', icon: 'bi-git', type: 'git', description: 'Versionamiento' },
     { name: 'GitHub', icon: 'bi-github', type: 'github', description: 'Repositorios' },
     { name: 'Postman', icon: 'bi-send-fill', type: 'postman', description: 'Pruebas API' },
-    { name: 'Swagger', icon: 'bi-journal-code', type: 'ts', description: 'Documentación API' }
+    { name: 'Swagger', icon: 'bi-journal-code', type: 'ts', description: 'Documentación API' },
+    { name: 'Kafka', icon: 'bi-diagram-3-fill', type: 'node', description: 'Eventos/Streaming' },
+    { name: 'React', icon: 'bi-filetype-jsx', type: 'react', description: 'Frontend React' },
+    { name: 'Kubernetes', icon: 'bi-box-fill', type: 'node', description: 'Orquestación' },
+    { name: 'Flutter', icon: 'bi-phone-fill', type: 'reactnative', description: 'Apps multiplataforma' },
+    { name: 'Redis', icon: 'bi-database-dash', type: 'mysql', description: 'Caché en memoria' }
   ];
 
   areas = [

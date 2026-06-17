@@ -162,7 +162,7 @@
 }
 
 .brand-info strong {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 950;
   color: #ffffff;
   letter-spacing: -0.03em;
@@ -170,7 +170,7 @@
 
 .brand-info small {
   color: #67e8f9;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
 }
 
@@ -181,7 +181,7 @@
 
 .nav-links a {
   color: #e9d5ff;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 850;
   transition: 0.25s ease;
 }
@@ -256,7 +256,7 @@
 }
 
 .hero-text {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.85;
   color: #eee9ff;
   max-width: 980px;
@@ -421,7 +421,7 @@
   font-family: Consolas, monospace;
   font-weight: 850;
   margin-bottom: 12px;
-  font-size: 17px;
+  font-size: 19px;
 }
 
 .keyword {
@@ -520,7 +520,7 @@
 
 .about-panel p {
   color: #f0ecff;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.95;
   margin-bottom: 18px;
 }
@@ -597,7 +597,7 @@
 .area-card p {
   color: #d8d2ef;
   line-height: 1.75;
-  font-size: 17px;
+  font-size: 19px;
 }
 
 /* TECNOLOGÍAS */
