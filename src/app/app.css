@@ -179,7 +179,7 @@
 
 .nav-links a {
   color: #e9d5ff;
-  font-size: 22px;
+  font-size: 19px;
   font-weight: 850;
   transition: 0.25s ease;
 }
@@ -227,10 +227,10 @@
 }
 
 .hero-content h1 {
-  font-size: clamp(62px, 7vw, 112px);
-  line-height: 0.92;
+  font-size: clamp(44px, 5.5vw, 82px);
+  line-height: 1.05;
   font-weight: 950;
-  letter-spacing: -0.07em;
+  letter-spacing: -0.05em;
   margin-bottom: 24px;
   text-shadow:
     0 0 16px rgba(168, 85, 247, 0.42),
@@ -245,11 +245,12 @@
 }
 
 .hero-content h2 {
-  font-size: clamp(27px, 3vw, 44px);
-  font-weight: 850;
+  font-size: clamp(20px, 2.5vw, 32px);
+  font-weight: 800;
   color: #fdf4ff;
-  margin-bottom: 24px;
-  max-width: 930px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  text-wrap: balance;
   text-shadow: 0 0 18px rgba(168, 85, 247, 0.28);
 }
 
