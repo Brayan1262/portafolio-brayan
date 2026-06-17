@@ -179,7 +179,7 @@
 
 .nav-links a {
   color: #e9d5ff;
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 850;
   transition: 0.25s ease;
 }
@@ -239,7 +239,7 @@
 
 .hero-content h1 span {
   display: block;
-  background: linear-gradient(135deg, #ffffff, #f0abfc, #67e8f9);
+  background: linear-gradient(135deg, #ffffff, var(--primary), var(--primary-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
