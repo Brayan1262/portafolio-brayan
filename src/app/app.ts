@@ -114,19 +114,19 @@ export class App implements OnInit, OnDestroy, AfterViewInit {
       tags: ['Angular', 'Spring Boot', 'FastAPI', 'PostgreSQL', 'Docker', 'IA']
     },
     {
-      title: 'API CRM Gestión Comercial 📊',
-      category: 'API REST Empresarial',
-      url: 'https://github.com/Brayan1262/api-crm-gestion-comercial',
+      title: 'CRM Orientado a Eventos 📊',
+      category: 'API REST Nivel Producción',
+      url: 'https://github.com/Brayan1262/crm-orientado-a-eventos',
       icon: 'bi-graph-up-arrow',
       description:
-        'API REST tipo CRM para gestión de clientes, contactos, oportunidades, actividades y dashboard comercial con Java Spring Boot y PostgreSQL.',
+        'API REST nivel Producción. Implementa Arquitectura Orientada a Eventos (EDA) con Change Data Capture (Debezium/Kafka), Alta Disponibilidad en Kubernetes, Observabilidad (Grafana) y resiliencia probada con Chaos Engineering.',
       points: [
-        'Gestión integral de clientes, contactos y ciclo de vida de oportunidades.',
-        'Integración y modelado de datos relacionales con JPA/Hibernate.',
-        'Seguridad, validaciones de negocio y arquitectura por capas.',
-        'Documentación de API utilizando Swagger/OpenAPI.'
+        'Arquitectura Orientada a Eventos (EDA) con Change Data Capture (Debezium y Kafka).',
+        'Alta Disponibilidad y orquestación de contenedores en Kubernetes.',
+        'Observabilidad integral del sistema utilizando Grafana y Prometheus.',
+        'Pruebas de resiliencia y tolerancia a fallos mediante Chaos Engineering.'
       ],
-      tags: ['Java', 'Spring Boot', 'PostgreSQL', 'JPA/Hibernate', 'Swagger', 'Docker']
+      tags: ['Spring Boot', 'Kafka', 'Kubernetes', 'Debezium', 'Grafana', 'Docker']
     },
     {
       title: 'Centinela TI 🛡️',
