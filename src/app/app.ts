@@ -64,6 +64,36 @@ export class App implements OnInit, OnDestroy, AfterViewInit {
 
   projects = [
     {
+      title: 'Plataforma Atalaya 🛡️',
+      category: 'Ciberseguridad y Monitoreo',
+      url: 'https://github.com/Brayan1262/plataforma-atalaya',
+      icon: 'bi-shield-shaded',
+      description:
+        'Plataforma de ciberseguridad y monitorización de infraestructura en tiempo real con arquitectura orientada a eventos (Kafka, Kubernetes, Spring Boot y React).',
+      points: [
+        'Arquitectura orientada a eventos usando Apache Kafka.',
+        'Despliegue y orquestación con Kubernetes e Istio.',
+        'Microservicios desarrollados en Java Spring Boot.',
+        'Interfaz de monitoreo en tiempo real usando React.'
+      ],
+      tags: ['React', 'Spring Boot', 'Kafka', 'Kubernetes', 'Cybersecurity', 'Microservices']
+    },
+    {
+      title: 'Orquestador Logístico Empresarial 🚚',
+      category: 'Sistemas en Tiempo Real',
+      url: 'https://github.com/Brayan1262/Orquestador-logistico-empresarial',
+      icon: 'bi-truck',
+      description:
+        'Sistema empresarial escalable para seguimiento de flotas en tiempo real. Usa arquitectura orientada a eventos con Spring Boot, Kafka, Redis, y un mapa interactivo en Flutter Web con SSE.',
+      points: [
+        'Seguimiento de flotas en tiempo real usando Server-Sent Events (SSE).',
+        'Arquitectura escalable basada en eventos con Apache Kafka.',
+        'Manejo de estados y caché en memoria utilizando Redis.',
+        'Mapa interactivo desarrollado multiplataforma con Flutter Web.'
+      ],
+      tags: ['Flutter', 'Spring Boot', 'Kafka', 'Redis', 'Event-Driven', 'Docker']
+    },
+    {
       title: 'Guardián Financiero IA 🛡️',
       category: 'Arquitectura de Microservicios',
       url: 'https://github.com/Brayan1262/IA-guardian-financiero',
@@ -79,6 +109,21 @@ export class App implements OnInit, OnDestroy, AfterViewInit {
       tags: ['Angular', 'Spring Boot', 'FastAPI', 'PostgreSQL', 'Docker', 'IA']
     },
     {
+      title: 'API CRM Gestión Comercial 📊',
+      category: 'API REST Empresarial',
+      url: 'https://github.com/Brayan1262/api-crm-gestion-comercial',
+      icon: 'bi-graph-up-arrow',
+      description:
+        'API REST tipo CRM para gestión de clientes, contactos, oportunidades, actividades y dashboard comercial con Java Spring Boot y PostgreSQL.',
+      points: [
+        'Gestión integral de clientes, contactos y ciclo de vida de oportunidades.',
+        'Integración y modelado de datos relacionales con JPA/Hibernate.',
+        'Seguridad, validaciones de negocio y arquitectura por capas.',
+        'Documentación de API utilizando Swagger/OpenAPI.'
+      ],
+      tags: ['Java', 'Spring Boot', 'PostgreSQL', 'JPA/Hibernate', 'Swagger', 'Docker']
+    },
+    {
       title: 'Centinela TI 🛡️',
       category: 'Monitoreo e IA Predictiva',
       url: 'https://github.com/Brayan1262/centinela-TI',
@@ -92,51 +137,6 @@ export class App implements OnInit, OnDestroy, AfterViewInit {
         'Ecosistema dockerizado con microservicios en Java Spring Boot y PostgreSQL.'
       ],
       tags: ['Java', 'Spring Boot', 'Python', 'WebSockets', 'Docker', 'PostgreSQL']
-    },
-    {
-      title: 'Gestión Usuarios Segura API',
-      category: 'Seguridad Backend',
-      url: 'https://github.com/Brayan1262/gestion-usuarios-segura-api',
-      icon: 'bi-shield-lock-fill',
-      description:
-        'API REST segura para gestión de usuarios, roles y autenticación con JWT usando Java Spring Boot, PostgreSQL y Docker.',
-      points: [
-        'Autenticación y autorización basada en tokens JWT con Spring Security.',
-        'Gestión completa de usuarios y roles con control de acceso.',
-        'Persistencia de datos segura utilizando PostgreSQL.',
-        'Despliegue containerizado mediante Docker para fácil distribución.'
-      ],
-      tags: ['Java', 'Spring Boot', 'PostgreSQL', 'Docker', 'JWT', 'API REST']
-    },
-    {
-      title: 'Sistema de Asistencia Facial',
-      category: 'Visión Computacional',
-      url: 'https://github.com/Brayan1262/sistema-asistencia-facial',
-      icon: 'bi-person-bounding-box',
-      description:
-        'Sistema web avanzado de asistencia facial para instituciones, aplicando visión computacional para registro automático integrando Angular, Spring Boot y Flask.',
-      points: [
-        'Reconocimiento facial biométrico mediante microservicio en Python Flask con OpenCV.',
-        'Registro preciso de usuarios con asociación automática de imágenes faciales.',
-        'Backend en Java Spring Boot para gestionar personas, asistencias y justificaciones.',
-        'Frontend administrativo en Angular con paneles de control y generación de reportes.'
-      ],
-      tags: ['Angular', 'Spring Boot', 'Python Flask', 'OpenCV', 'MySQL']
-    },
-    {
-      title: 'API Gestión Tareas Segura',
-      category: 'Seguridad Backend',
-      url: 'https://github.com/Brayan1262/api-gestion-tareas-segura',
-      icon: 'bi-lock-fill',
-      description:
-        'API REST profesional para la gestión de tareas y proyectos, implementando altos estándares de seguridad, control de acceso y observabilidad.',
-      points: [
-        'Autenticación robusta con JWT y Control de Acceso Basado en Roles (RBAC).',
-        'Trazabilidad completa mediante sistemas de logging estructurado y métricas.',
-        'Garantía de calidad con implementación de pruebas automatizadas integrales.',
-        'Despliegue y ecosistema totalmente Dockerizado sobre base de datos PostgreSQL.'
-      ],
-      tags: ['Python', 'API REST', 'JWT', 'RBAC', 'PostgreSQL', 'Docker']
     }
   ];
 
