@@ -256,7 +256,7 @@
 }
 
 .hero-text {
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.85;
   color: #eee9ff;
   max-width: 980px;
@@ -264,8 +264,8 @@
 }
 
 .hero-text strong {
-  color: #67e8f9;
-  text-shadow: 0 0 14px rgba(34, 211, 238, 0.35);
+  color: #f472b6;
+  text-shadow: 0 0 12px rgba(244, 114, 182, 0.25);
 }
 
 .hero-text.soft {
@@ -520,14 +520,14 @@
 
 .about-panel p {
   color: #f0ecff;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 1.95;
   margin-bottom: 18px;
 }
 
 .about-panel strong {
-  color: #67e8f9;
-  text-shadow: 0 0 12px rgba(34, 211, 238, 0.28);
+  color: #f472b6;
+  text-shadow: 0 0 12px rgba(244, 114, 182, 0.25);
 }
 
 .areas-grid {
@@ -597,7 +597,7 @@
 .area-card p {
   color: #d8d2ef;
   line-height: 1.75;
-  font-size: 19px;
+  font-size: 20px;
 }
 
 /* TECNOLOGÍAS */
